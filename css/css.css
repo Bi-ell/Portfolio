@@ -1,0 +1,220 @@
+@import url('https://fonts.cdnfonts.com/css/minecraftia');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+#cafe{
+    padding: 0px;
+}
+
+body{
+    background: url(../img/bg-mobile.jpg) no-repeat top center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light body{
+    background: url(../img/bg-mobile-light.jpg) no-repeat top center/cover;
+}
+
+body.dark{
+    color: black;
+}
+
+a{
+    color: white;
+}
+
+.light a{
+    color: black;
+}
+
+body *{
+    font-family: "Minecraftia";
+}
+
+#container{
+    width: 100%;
+    max-width: 588px;
+    margin: 56px auto 0px;
+    padding: 0 24px;
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2.5px solid violet;
+    box-shadow: 0 0 10px white;
+}
+
+.light .logo{
+    border: 3px solid purple;
+    box-shadow: 0 0 10px black;
+}
+
+ul{
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+}
+
+li{
+    width: 300px;
+    border: 3px solid violet;
+    box-shadow: 0 0 10px white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.light li{
+    border: 3px solid purple;
+    box-shadow: 0 0 10px black;
+}
+
+p{
+    color: white;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.light p{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+#switch{
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+}
+
+#switch button{
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 50%;
+    background: white url(../img/moon-stars.svg) no-repeat center;
+    box-shadow: 0 0 10px white;
+    position: absolute;
+    top: -10%;
+    left: 0;
+    z-index: 1;
+    transform: translate(-50%);
+    animation: slide-back 0.2s;
+}
+
+#switch button:hover{
+    outline: 2.5px solid rgb(238, 130, 238, 0.8);
+}
+
+.light #switch button:hover{
+    outline: 2.5px solid rgb(128, 0, 128, 0.8);
+}
+
+#switch span{
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: rgb(0, 0, 0, 0.1);
+    border: 2px solid rgb(238, 130, 238);
+    box-shadow: 0 0 10px white;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+}
+
+.light #switch span{
+    background: rgb(255, 255, 255, 0.1);
+    border: 2px solid purple;
+    box-shadow: 0 0 10px black;
+}
+
+.light #switch button{
+    background: white url(../img/sun.svg) no-repeat center;
+    animation: slide-in 0.2s forwards;
+    box-shadow: 0 0 10px black;
+}
+
+#social-links{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#social-links a{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+#social-links a:hover{
+    color: black;
+}
+
+.light #social-links a:hover{
+    color: rgb(128, 128, 128);
+}
+
+ion-icon{
+    font-size: 30px;
+    color: white;
+    
+}
+
+.light ion-icon{
+    color: black;
+}
+
+@media (min-width: 700){
+    body{
+        background: url(../img/bg-desktop.jpg) no-repeat top center/cover;
+    }
+
+    .light body{
+        background: url(../img/bg-desktop-light.jpg) no-repeat top center/cover;
+    }
+}
+
+@keyframes slide-in{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes slide-back{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0%;
+    }
+}
