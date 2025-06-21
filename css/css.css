@@ -14,7 +14,7 @@ body{
     background: url(../img/bg-mobile.jpg) no-repeat top center/cover;
     height: 100vh;
     display: flex;
-    justify-content: center;
+/*     justify-content: center; */
     align-items: center;
 }
 
@@ -41,7 +41,7 @@ body *{
 #container{
     width: 100%;
     max-width: 588px;
-    margin: 56px auto 0px;
+    margin: 0px auto 0px;
     padding: 0 24px;
 }
 
@@ -82,7 +82,7 @@ li{
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 10px 15px;
+    padding: 10px 12px;
 }
 
 .light li{
