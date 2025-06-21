@@ -186,11 +186,13 @@ ion-icon{
     color: white;
     padding: 7px;
     border: 1px solid violet;
+    box-shadow: 0 0 5px white;
     border-radius: 100%;
 }
 
 .light ion-icon{
     color: black;
+    box-shadow: 0 0 5px black;
     border: 1px solid purple;
 }
 
