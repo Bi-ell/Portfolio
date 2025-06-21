@@ -184,11 +184,14 @@ a{
 ion-icon{
     font-size: 30px;
     color: white;
-    
+    padding: 7px;
+    border: 1px solid violet;
+    border-radius: 100%;
 }
 
 .light ion-icon{
     color: black;
+    border: 1px solid purple;
 }
 
 @media (min-width: 700){
